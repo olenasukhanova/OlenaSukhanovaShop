@@ -288,7 +288,7 @@ input[type="text"]::-webkit-input-placeholder {
   box-sizing: border-box;
 }
 .checkbox,.checkbox_filterbutton,.submit_button {
-  padding-left: 29px;
+  padding-left: 30px;
 }
 
 .filter {
@@ -302,6 +302,10 @@ input[type="text"]::-webkit-input-placeholder {
 input[type="checkbox"]{
   display: none;
 }
+/* label {
+position: relative;
+padding-left: 30px;
+} */
 
 label:before {
   content: "";
@@ -311,6 +315,7 @@ label:before {
   border:1px solid white;
   cursor:pointer;
   vertical-align: middle;
+  /* position: absolute; */
 }
 
 input[type="checkbox"]:checked+label:before {
@@ -404,7 +409,8 @@ i.right {
    background-color:rgba(255,255,255,0.75);
    border:1px solid white;
    margin-top: 50px;
-   position: relative;
+   text-align: center;
+   line-height: 180px;
 }
 
 .item2 {
@@ -415,17 +421,16 @@ i.right {
 }
 
 .devicephoto {
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  vertical-align: middle;
 }
 
 .icons {
   position: relative;
+  float:right;
 }
 
 .zoom_icon, .heart_icon{
+  /* float: right; */
   width:30px;
   height:30px;
   border:1px solid #2c71b8;
@@ -433,14 +438,14 @@ i.right {
   background-position: 50% 50%;
   position:absolute;
   top:10px;
-  left:230px;
+  right:10px;
 }
 
 .heart_icon { 
   background:url("images/icon(5).png") no-repeat;
   background-position: 50% 50%;
   top:50px;
-  left:230px;
+  right:10px;
 }
 
 .zoom_icon:hover {
