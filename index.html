@@ -7,7 +7,6 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-  <link rel ="stylesheet" href ="file.css">
   <title>Online-shop</title>
 </head>
 <body>
@@ -55,7 +54,7 @@
             <div class="row">
               <div class="cart_section">
                <div id="cart"> </div>
-               <div class="products-count">4 </div>
+               <div class="products-count" id="products-count">0 </div>
              </div>
            </div>
           </div>
@@ -145,7 +144,7 @@
           <div class="item1"> <img src="images/icon17.png" alt="computer" class="devicephoto">
             <div class="icons"> 
               <div class="zoom_icon"> </div>
-              <div class="heart_icon"> </div>
+              <div class="heart_icon liked"> </div>
          </div>
           </div>
           <div class="catalog1">
@@ -348,6 +347,24 @@
     </div> 
    <!-- </div> -->
  </footer>
+ <!-- modal -->
+ <div class="modal">
+   <div class="modal-block">
+     <form action="">
+       <div class="btn-close">X</div><br>
+       <div><h3>Please call for more details:</h3></div> 
+       <div class="form-fields">
+         <input type="text" placeholder="Your name">
+       </div>
+       <div class="form-fields">
+         <input type="text" placeholder="Your phone">
+       </div>
+       <button class="more_detais_butt">Please call</button>
+     </form>
+   </div>
+ </div>
+ <!-- modal ends -->
+ <script src="app.js"></script>
 </body>
 </html>
 
